@@ -2,6 +2,9 @@
 
 GSLabel is a UILabel subclass supporting content insets written in Swift.
 
+![Contents Insets Off](https://github.com/GyazSquare/GSLabel/raw/develop/images/content-insets-off.png "Contents Insets Off")
+![Contents Insets On](https://github.com/GyazSquare/GSLabel/raw/develop/images/content-insets-off.png "Contents Insets On")
+
 ## Requirements
 
 * Xcode 7 or later
