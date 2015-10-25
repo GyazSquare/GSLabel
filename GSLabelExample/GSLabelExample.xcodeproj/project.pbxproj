@@ -12,7 +12,7 @@
 		D7ADAFE11BB10DC800291D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7ADAFDF1BB10DC800291D5E /* Main.storyboard */; };
 		D7ADAFE31BB10DC800291D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7ADAFE21BB10DC800291D5E /* Assets.xcassets */; };
 		D7ADAFE61BB10DC800291D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7ADAFE41BB10DC800291D5E /* LaunchScreen.storyboard */; };
-		D7ADB00C1BB1507200291D5E /* GSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB00B1BB1507200291D5E /* GSLabel.swift */; settings = {ASSET_TAGS = (); }; };
+		D7ADB00C1BB1507200291D5E /* GSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB00B1BB1507200291D5E /* GSLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -209,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +247,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
