@@ -5,12 +5,36 @@
 import UIKit.UILabel
 
 public class GSLabel: UILabel {
+    // MARK: Constants
+
+    private struct PropertyKey {
+        static let contentInsets = "contentInsets"
+    }
+
     // MARK: Properties
 
     public var contentInsets: UIEdgeInsets = UIEdgeInsetsZero {
         didSet {
             invalidateIntrinsicContentSize()
         }
+    }
+
+    // MARK: Initializers
+
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+
+    // MARK: NSCoding
+
+    override public func encodeWithCoder(aCoder: NSCoder) {
+        super.encodeWithCoder(aCoder)
+        aCoder.encodeUIEdgeInsets(contentInsets, forKey: PropertyKey.contentInsets)
+    }
+
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        contentInsets = aDecoder.decodeUIEdgeInsetsForKey(PropertyKey.contentInsets)
     }
 
     // MARK: UILabel
