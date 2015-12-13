@@ -1,5 +1,7 @@
 # GSLabel
 
+[![Build Status](https://travis-ci.org/GyazSquare/GSLabel.svg?branch=master)](https://travis-ci.org/GyazSquare/GSLabel)
+
 GSLabel is a UILabel subclass supporting content insets written in Swift.
 
 ![Contents Insets Off](https://github.com/GyazSquare/GSLabel/raw/master/images/content-insets-off.png "Contents Insets Off")
