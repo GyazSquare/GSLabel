@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D731FF101C127780004FA287 /* GSLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D731FF0F1C127780004FA287 /* GSLabelTests.swift */; };
 		D7ADAFDC1BB10DC800291D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADAFDB1BB10DC800291D5E /* AppDelegate.swift */; };
 		D7ADAFDE1BB10DC800291D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADAFDD1BB10DC800291D5E /* ViewController.swift */; };
 		D7ADAFE11BB10DC800291D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7ADAFDF1BB10DC800291D5E /* Main.storyboard */; };
@@ -15,7 +16,20 @@
 		D7ADB00C1BB1507200291D5E /* GSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB00B1BB1507200291D5E /* GSLabel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D731FF121C127780004FA287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7ADAFD01BB10DC800291D5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7ADAFD71BB10DC800291D5E;
+			remoteInfo = GSLabelExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D731FF0D1C127780004FA287 /* GSLabelExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSLabelExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D731FF0F1C127780004FA287 /* GSLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSLabelTests.swift; sourceTree = "<group>"; };
+		D731FF111C127780004FA287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7ADAFD81BB10DC800291D5E /* GSLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7ADAFDB1BB10DC800291D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7ADAFDD1BB10DC800291D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +41,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D731FF0A1C127780004FA287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7ADAFD51BB10DC800291D5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,11 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D731FF0E1C127780004FA287 /* GSLabelExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D731FF0F1C127780004FA287 /* GSLabelTests.swift */,
+				D731FF111C127780004FA287 /* Info.plist */,
+			);
+			path = GSLabelExampleTests;
+			sourceTree = "<group>";
+		};
 		D7ADAFCF1BB10DC800291D5E = {
 			isa = PBXGroup;
 			children = (
 				D7ADB00A1BB1507200291D5E /* GSLabel */,
 				D7ADAFDA1BB10DC800291D5E /* GSLabelExample */,
+				D731FF0E1C127780004FA287 /* GSLabelExampleTests */,
 				D7ADAFD91BB10DC800291D5E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D7ADAFD81BB10DC800291D5E /* GSLabelExample.app */,
+				D731FF0D1C127780004FA287 /* GSLabelExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +111,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D731FF0C1C127780004FA287 /* GSLabelExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D731FF161C127780004FA287 /* Build configuration list for PBXNativeTarget "GSLabelExampleTests" */;
+			buildPhases = (
+				D731FF091C127780004FA287 /* Sources */,
+				D731FF0A1C127780004FA287 /* Frameworks */,
+				D731FF0B1C127780004FA287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D731FF131C127780004FA287 /* PBXTargetDependency */,
+			);
+			name = GSLabelExampleTests;
+			productName = GSLabelExampleTests;
+			productReference = D731FF0D1C127780004FA287 /* GSLabelExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D7ADAFD71BB10DC800291D5E /* GSLabelExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7ADAFEA1BB10DC800291D5E /* Build configuration list for PBXNativeTarget "GSLabelExample" */;
@@ -102,8 +152,13 @@
 		D7ADAFD01BB10DC800291D5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					D731FF0C1C127780004FA287 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D7ADAFD71BB10DC800291D5E;
+					};
 					D7ADAFD71BB10DC800291D5E = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -123,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				D7ADAFD71BB10DC800291D5E /* GSLabelExample */,
+				D731FF0C1C127780004FA287 /* GSLabelExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D731FF0B1C127780004FA287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7ADAFD61BB10DC800291D5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +204,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D731FF091C127780004FA287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D731FF101C127780004FA287 /* GSLabelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7ADAFD41BB10DC800291D5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D731FF131C127780004FA287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7ADAFD71BB10DC800291D5E /* GSLabelExample */;
+			targetProxy = D731FF121C127780004FA287 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7ADAFDF1BB10DC800291D5E /* Main.storyboard */ = {
@@ -173,6 +252,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D731FF141C127780004FA287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GSLabelExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.GSLabelExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSLabelExample.app/GSLabelExample";
+			};
+			name = Debug;
+		};
+		D731FF151C127780004FA287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GSLabelExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.GSLabelExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSLabelExample.app/GSLabelExample";
+			};
+			name = Release;
+		};
 		D7ADAFE81BB10DC800291D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -209,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -247,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -279,6 +384,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D731FF161C127780004FA287 /* Build configuration list for PBXNativeTarget "GSLabelExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D731FF141C127780004FA287 /* Debug */,
+				D731FF151C127780004FA287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D7ADAFD31BB10DC800291D5E /* Build configuration list for PBXProject "GSLabelExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
