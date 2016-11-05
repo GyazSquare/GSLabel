@@ -14,19 +14,19 @@ class ViewController: UIViewController {
 
     // MARK: IBActions
 
-    @IBAction func valueChanged(sender: UISwitch) {
+    @IBAction func valueChanged(_ sender: UISwitch) {
         if sender == contentInsetsSwitch {
             labels.forEach {
-                if (sender.on) {
+                if (sender.isOn) {
                     let inset = $0.font.pointSize / 4
                     $0.contentInsets = UIEdgeInsetsMake(inset, inset, inset, inset)
                 } else {
-                    $0.contentInsets = UIEdgeInsetsZero
+                    $0.contentInsets = UIEdgeInsets.zero
                 }
             }
         } else if sender == roundedCornersSwitch {
             labels.forEach {
-                if (sender.on) {
+                if (sender.isOn) {
                     $0.layer.cornerRadius = $0.font.pointSize / 4
                 } else {
                     $0.layer.cornerRadius = 0

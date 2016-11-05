@@ -4,16 +4,10 @@
 
 import UIKit.UILabel
 
-public class GSLabel: UILabel {
-    // MARK: Constants
-
-    private struct PropertyKey {
-        static let contentInsets = "contentInsets"
-    }
-
+open class GSLabel: UILabel {
     // MARK: Properties
 
-    public var contentInsets: UIEdgeInsets = UIEdgeInsetsZero {
+    open var contentInsets: UIEdgeInsets = UIEdgeInsets.zero {
         didSet {
             invalidateIntrinsicContentSize()
         }
@@ -27,29 +21,35 @@ public class GSLabel: UILabel {
 
     // MARK: NSCoding
 
-    override public func encodeWithCoder(aCoder: NSCoder) {
-        super.encodeWithCoder(aCoder)
-        aCoder.encodeUIEdgeInsets(contentInsets, forKey: PropertyKey.contentInsets)
+    override open func encode(with aCoder: NSCoder) {
+        super.encode(with: aCoder)
+        aCoder.encode(contentInsets, forKey: PropertyKey.contentInsets)
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        contentInsets = aDecoder.decodeUIEdgeInsetsForKey(PropertyKey.contentInsets)
+        contentInsets = aDecoder.decodeUIEdgeInsets(forKey: PropertyKey.contentInsets)
     }
 
     // MARK: UILabel
 
-    override public func drawTextInRect(rect: CGRect) {
+    override open func drawText(in rect: CGRect) {
         let newRect = UIEdgeInsetsInsetRect(rect, contentInsets)
-        super.drawTextInRect(newRect)
+        super.drawText(in: newRect)
     }
 
     // MARK: UIView (UIConstraintBasedLayoutLayering)
 
-    override public func intrinsicContentSize() -> CGSize {
-        let size = super.intrinsicContentSize()
+    override open var intrinsicContentSize : CGSize {
+        let size = super.intrinsicContentSize
         let width = size.width + contentInsets.left + contentInsets.right
         let height = size.height + contentInsets.top + contentInsets.bottom
-        return CGSizeMake(width, height)
+        return CGSize(width: width, height: height)
+    }
+
+    // MARK: Private Constants
+
+    private struct PropertyKey {
+        static let contentInsets = "contentInsets"
     }
 }

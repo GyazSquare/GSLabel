@@ -3,9 +3,10 @@
 //  GSLabelTests
 //
 
-import GSLabelExample
 import UIKit
 import XCTest
+
+import GSLabelExample
 
 class GSLabelTests: XCTestCase {
 
@@ -22,19 +23,19 @@ class GSLabelTests: XCTestCase {
     func testNSCoding() {
         // default contentInsets
         do {
-            let label = GSLabel(frame: CGRectZero)
-            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsetsZero, label.contentInsets))
-            let data = NSKeyedArchiver.archivedDataWithRootObject(label)
-            let object = NSKeyedUnarchiver.unarchiveObjectWithData(data)
-            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsetsZero, (object as! GSLabel).contentInsets))
+            let label = GSLabel(frame: CGRect.zero)
+            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets.zero, label.contentInsets))
+            let data = NSKeyedArchiver.archivedData(withRootObject: label)
+            let object = NSKeyedUnarchiver.unarchiveObject(with: data)
+            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets.zero, (object as! GSLabel).contentInsets))
         }
         // custom contentInsets
         do {
-            let label = GSLabel(frame: CGRectZero)
+            let label = GSLabel(frame: CGRect.zero)
             let contentInsets = UIEdgeInsetsMake(1, 2, 3, 4)
             label.contentInsets = contentInsets
-            let data = NSKeyedArchiver.archivedDataWithRootObject(label)
-            let object = NSKeyedUnarchiver.unarchiveObjectWithData(data)
+            let data = NSKeyedArchiver.archivedData(withRootObject: label)
+            let object = NSKeyedUnarchiver.unarchiveObject(with: data)
             XCTAssert(UIEdgeInsetsEqualToEdgeInsets(contentInsets, (object as! GSLabel).contentInsets))
         }
     }
