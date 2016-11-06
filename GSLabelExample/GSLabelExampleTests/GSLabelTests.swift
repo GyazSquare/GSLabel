@@ -23,7 +23,7 @@ class GSLabelTests: XCTestCase {
     func testNSCoding() {
         // default contentInsets
         do {
-            let label = GSLabel(frame: CGRect.zero)
+            let label = GSLabel(frame: .zero)
             XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets.zero, label.contentInsets))
             let data = NSKeyedArchiver.archivedData(withRootObject: label)
             let object = NSKeyedUnarchiver.unarchiveObject(with: data)
@@ -31,7 +31,7 @@ class GSLabelTests: XCTestCase {
         }
         // custom contentInsets
         do {
-            let label = GSLabel(frame: CGRect.zero)
+            let label = GSLabel(frame: .zero)
             let contentInsets = UIEdgeInsetsMake(1, 2, 3, 4)
             label.contentInsets = contentInsets
             let data = NSKeyedArchiver.archivedData(withRootObject: label)
