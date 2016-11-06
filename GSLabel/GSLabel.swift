@@ -7,7 +7,7 @@ import UIKit.UILabel
 open class GSLabel: UILabel {
     // MARK: Properties
 
-    open var contentInsets: UIEdgeInsets = UIEdgeInsets.zero {
+    open var contentInsets: UIEdgeInsets = .zero {
         didSet {
             invalidateIntrinsicContentSize()
         }

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
                     let inset = $0.font.pointSize / 4
                     $0.contentInsets = UIEdgeInsetsMake(inset, inset, inset, inset)
                 } else {
-                    $0.contentInsets = UIEdgeInsets.zero
+                    $0.contentInsets = .zero
                 }
             }
         } else if sender == roundedCornersSwitch {

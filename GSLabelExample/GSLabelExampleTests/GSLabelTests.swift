@@ -24,10 +24,10 @@ class GSLabelTests: XCTestCase {
         // default contentInsets
         do {
             let label = GSLabel(frame: .zero)
-            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets.zero, label.contentInsets))
+            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(.zero, label.contentInsets))
             let data = NSKeyedArchiver.archivedData(withRootObject: label)
             let object = NSKeyedUnarchiver.unarchiveObject(with: data)
-            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(UIEdgeInsets.zero, (object as! GSLabel).contentInsets))
+            XCTAssert(UIEdgeInsetsEqualToEdgeInsets(.zero, (object as! GSLabel).contentInsets))
         }
         // custom contentInsets
         do {
