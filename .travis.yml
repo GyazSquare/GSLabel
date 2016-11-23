@@ -5,7 +5,7 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - xcodebuild -project GSLabelExample/GSLabelExample.xcodeproj -scheme GSLabelExample -destination 'platform=iOS Simulator,name=iPhone 7s' -sdk iphonesimulator test | xcpretty -c
+  - xcodebuild -project GSLabelExample/GSLabelExample.xcodeproj -scheme GSLabelExample -destination 'platform=iOS Simulator,name=iPhone 7' -sdk iphonesimulator test | xcpretty -c
 notifications:
   slack:
     secure: X0mrRLRSGgJ4tLWPKOGV5Y2eJHHD5FX4AoZ1rFdcCWgrBQ9yL31uI0DOCmMGO+OLtrJcNBXMe/fLP1cKDKayajq9gxN8NjdgbKtIddbGEZsvrTMS0RnDCP5IgNX1jh7G6LEIQkhNZO0pka5tdn86UrXG6wsJKheHvbGBKedtmesMNm/7+6l4Lci7oZ6GgRKEUyNebQV5Fh9UQ/bHTqaP0spsVzd5p/UOramQ+sTkPy+oLDz5HQ2pWQ8qKs6qgO00MQ5X0vIfhmyZjH+V0QdvOlF1Qc7RWRdapzOGbvRBbF/vAYnwxgGG4uCCpPKaAPfsLb8iQbOz1cEnQBCE+DXY/vjLxUL9tcdPk7mF6H7zkHP5JD32ejN/1HCEGpvwuz03WD4L513oF7Rj3rSyIlGmp3D5DUXD0+hHjlNdeIRH4GcDVdT+FQ4Byp73cGGFiTdJadk5gUn9E0NGzka8eBe85q85rK1DuWmsZ4gVd/x5Qm4HZvK/qGYSGvCQPz78/r7Sy+JUpLWLZg0ST2EQUurN4F1ntrG4PBzN89NeWsFgLaz+s+3/xE/rFoFn84BeUBsdZWbE9HZLAguSStIqQfX4r92t1UChbgR4ANxJLL5bwSwNWsA3qX4l94mikAPhoGlq2PgaHpiF+qUOdnEUW6PUpRE+bPIuBW0vR+z9TNKTd1Q=
