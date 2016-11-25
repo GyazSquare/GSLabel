@@ -9,8 +9,8 @@ GSLabel is a UILabel subclass supporting content insets written in Swift.
 
 ## Requirements
 
-* Xcode 8 (Swift 3) or later
-* Base SDK: iOS 10.0 / tvOS 10.0 or later
+* Xcode 8.1 (Swift 3.0.1) or later
+* Base SDK: iOS 10.1 / tvOS 10.0 or later
 * Deployment Target: iOS 7.0 / tvOS 9.0 or later
 
 ## Installation
