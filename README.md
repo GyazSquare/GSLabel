@@ -1,5 +1,7 @@
 # GSLabel
 
+**Important:** This library is deprecated, it is recommended you look at [InsetLabel](https://github.com/GyazSquare/InsetLabel).
+
 [![Build Status](https://travis-ci.org/GyazSquare/GSLabel.svg?branch=master)](https://travis-ci.org/GyazSquare/GSLabel)
 
 GSLabel is a UILabel subclass supporting content insets written in Swift.
